@@ -5,8 +5,7 @@ import { addNewTodo } from '../actions'
 
 class TodoList extends Component {
     state = {
-       value: "",
-       completed: false
+       value: ""
     }
 
     handleChanges = event => {
