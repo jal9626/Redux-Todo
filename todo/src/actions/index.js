@@ -1,5 +1,6 @@
 export const ADD_TODO ='ADD_TODO';
 export const TOGGLE_TODO ='TOGGLE_TODO';
+export const DELETE_TODO ='DELETE_TODO';
 
 export function addNewTodo(newTodo) {
     return {
@@ -12,5 +13,11 @@ export function toggleTodo(index) {
     return {
         type: TOGGLE_TODO,
         payload: index
+    }
+}
+
+export function deleteTodo() {
+    return {
+        type: DELETE_TODO
     }
 }
